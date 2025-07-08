@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+}
+
+main {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#login {
+    width: 40%;
+    background-color: rgba(0, 32, 98, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 80%;
+    display: block;
+    height: auto;
+    align-self: center;
+    padding-top: 25px;
+    padding-left: 25px;
+
+}
+
+.logo h1 {
+    color: white;
+}
+.signup {
+  padding: 15px;
+ 
+}
+
+#email {
+    width: 300px;
+    height: 48.84px;
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#email input {
+    background-color: transparent;
+    height: 15px;
+    width: 226px;
+    padding: 15px;
+    padding-left: 40px;
+    font-size: 15px;
+    color: aliceblue;
+    border: none;
+    border-style: none;
+}
+
+#email svg {
+    /* margin-top: 15px; */
+    margin-left: 20px;
+}
+
+#pass {
+    width: 300px;
+    height: 48.84px;
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#pass input {
+    background-color: transparent;
+    height: 15px;
+    width: 226px;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+    color: aliceblue;
+    border: none;
+    border-style: none;
+}
+#pass svg {
+    /* margin-top: 15px; */
+    margin-left: 20px;
+}
+.signup p{
+    color: whitesmoke;
+    text-align: right;
+    font-size: 14px;
+}
+
+#student {
+    width: 60%;
+    height: 1024px;
+}
+
+#student img {
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+}
+
+/* FOCUS */
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}

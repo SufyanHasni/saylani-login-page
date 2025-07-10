@@ -38,9 +38,10 @@ main {
 .logo h1 {
     color: white;
 }
+
 .signup {
-  padding: 15px;
- 
+    padding: 15px;
+
 }
 
 #email {
@@ -86,21 +87,107 @@ main {
     background-color: transparent;
     height: 15px;
     width: 226px;
-    padding: 10px;
+    gap: 10px;
     padding-left: 40px;
     font-size: 15px;
     color: aliceblue;
     border: none;
     border-style: none;
 }
+
 #pass svg {
     /* margin-top: 15px; */
     margin-left: 20px;
 }
-.signup p{
+#pass img {
+    padding-right: 10px;
+}
+
+.signup p {
     color: whitesmoke;
     text-align: right;
     font-size: 14px;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+
+#signin {
+    color: whitesmoke;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    background-color: rgba(26, 79, 186, 1);
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    border-radius: 15px;
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+}
+
+#or {
+    width: 300px;
+    color: white;
+    text-align: center;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    margin-top: 0;
+}
+
+#google {
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    background-color: transparent;
+    margin-top: 5px;
+    color: white;
+    /* width: 300px; */
+    text-align: center;
+    align-items: center;
+}
+
+#fb {
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#apple {
+    border: 0.3px solid rgba(70, 113, 198, 0.65);
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 0px;
+    color: white;
+    text-align: center;
+    
+}
+
+.link {
+    color: rgba(193, 182, 182, 1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px;
+}
+.btns p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.btns p a{
+    padding: 5px;
+    color: rgba(70, 113, 198, 1);
+
 }
 
 #student {
@@ -111,12 +198,58 @@ main {
 #student img {
     width: 100%;
     height: 100dvh;
-    background-size: cover;
+    background-size: cover; 
 }
 
 /* FOCUS */
 
-input:focus{
+input:focus {
     outline: none;
     box-shadow: none;
+}
+
+@media screen and (max-width:375px){
+    #student{
+        display: none;
+    }
+    #login{
+        display: inline;
+        width: 100%;
+    }
+    #signin{
+        width: 300px;
+        margin-left: 10px;
+    }
+    #pass {
+        margin: 0;
+    }
+    .logo h1 {
+        margin: 0;
+    }
+    .logo img {
+        padding-left:40px ;
+        padding-right:40px ;
+    }
+}
+
+@media screen and (max-width:750px){
+    #student{
+        display:none;
+    }
+    #login{
+        display:flex;
+        width: 100%;
+    }
+    .logo img{
+        padding-left: 50px;
+    }
+    .logo h1{
+        margin: 4px 0 2px 0;
+    }
+    #or{
+        padding: 0;
+    }
+    .signup p{
+        margin-top:0 ;
+    }
 }
